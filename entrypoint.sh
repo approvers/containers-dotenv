@@ -7,7 +7,7 @@ for DIRECTORY in */; do
     cd $DIRECTORY
 
     PREFIX=$(echo $DIRECTORY | sed 's/\///' | tr '[a-z]' '[A-Z]')
-    printenv | grep "^${PREFIX}_"
+    printenv | grep "^${PREFIX}_" > ./.env
 
     cd ..
 done
