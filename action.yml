@@ -1,0 +1,6 @@
+name: 'Containers Dotenv'
+description: 'A GitHub Action to extract the secrets as .env file for each container.'
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
